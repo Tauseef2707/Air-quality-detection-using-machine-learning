@@ -5,7 +5,7 @@ import joblib
 st.title("Air Quality Prediction System")
 
 # Load model
-model = joblib.load("air_quality_model.pkl")
+model = joblib.load("air_quality_model.joblib")
 
 # User input
 pm25 = st.number_input("PM2.5 value", 0.0, 1000.0, 50.0)
